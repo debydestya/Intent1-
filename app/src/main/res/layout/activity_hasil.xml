@@ -11,4 +11,11 @@
     tools:context="id.sch.smktelkom_mlg.learn.intent1.HasilActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:text="Hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHasil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:gravity="center"/>
 </LinearLayout>
