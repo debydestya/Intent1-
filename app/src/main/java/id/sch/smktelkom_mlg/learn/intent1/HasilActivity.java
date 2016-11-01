@@ -1,12 +1,14 @@
 package id.sch.smktelkom_mlg.learn.intent1;
 
-import android.icu.util.Calendar;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import java.util.Calendar;
 
 public class HasilActivity extends AppCompatActivity
 {
@@ -32,7 +34,7 @@ public class HasilActivity extends AppCompatActivity
 
         String nama = getIntent().getStringExtra(MainActivity.NAMA);
         int umur = getIntent().getIntExtra(MainActivity.UMUR,0);
-        int yearNow = Calendar.getInstance().get(Calendar.YEAR);
+        int yearNow = java.util.Calendar.getInstance().get(Calendar.YEAR);
         int tahunLahir = yearNow - umur;
 
         TextView tvHasil = (TextView) findViewById(R.id.textViewHasil);
